@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>snake !</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="game.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="score">
+        <h6>Score : <span id="score-span"></span></h6>
+      </div>
+      <h1>Snake</h1>
+      <div class="leader-board-container">
+        <button id="show-player-btn">Players</button>
+        <ul class="player-list hide" id="player-list-ul" type="none"></ul>
+      </div>
+    </header>
+    <main>
+      <canvas id="canvas" width="960" height="600"></canvas>
+      <section id="game-over-section" class="hide">
+        <h2>Game Over !</h2>
+        <h6>Your Name : <span id="player-name-span"></span></h6>
+        <h6>Your Score : <span id="player-score-span"></span></h6>
+        <button class="play-button" id="play-again-btn">Play Again</button>
+      </section>
+    </main>
+    <footer>
+      <input placeholder="insert your Name" id="name-input" value="Player" />
+      <button class="play-button" id="play-btn">Play</button>
+    </footer>
+  </body>
+</html>
